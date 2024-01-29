@@ -17,11 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
+        <div className='container mx-auto'>
         <Providers>
           {children}
         </Providers>
-        </body>
+        </div> 
+      </body>
     </html>
   );
 }
